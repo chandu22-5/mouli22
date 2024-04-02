@@ -27,7 +27,19 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+  </dependencies> 
+
+  <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://3.143.213.206:8081/repository/sample-snapshot/</url>
+		 </snapshotRepository>
+		
+		 <repository>
+		    <id>nexusRepo</id>
+		    <url>http://3.143.213.206:8081/repository/sample-release/</url>
+	  	 </repository>
+  </distributionManagement>
 
   <build>
     <finalName>loans</finalName>
